@@ -225,17 +225,226 @@ html{
 
 /* about me */
 
-.about-me{
-     display: flex;
+.about-section{
+
+    text-align:center;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
     background: #F9FAFB;
     margin-top: 100px;
     padding: 0px 50px ;
-     margin: 30px 30px 30px 30px;
+    margin: 30px 30px 30px 30px;
     border-radius: 20px;
-    height: 100vh;
+    /* height: 100vh; */
+    position: relative;
+    flex-direction: column;
+}
+
+/* TITLES */
+.about-title{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    margin-bottom:20px;
+}
+
+.small-title{
+    margin-top: 40px;
+    font-size:25px;
+    color:#666;
+}
+
+.large-title{
+    font-size:50px;
+}
+
+/* CARD CONTAINER */
+.about-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+    position:relative;
+    overflow:hidden;
 }
 
 
+
+/* TEXT AREA */
+.about-text{
+    flex:1;
+    text-align:left;
+}
+
+.about-text h2{
+
+    font-size:36px;
+    margin-bottom:65px;
+}
+
+.about-text p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.about-details p{
+    margin:8px 0;
+    font-size:15px;
+}
+
+/* IMAGE */
+.about-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.about-image img{
+    width:540px;
+   
+}
+
+
+
+/* service */
+
+.services-section{
+    background:#F9FAFB;
+    padding:60px 40px;
+    margin:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+/* Title */
+.services-title{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.services-subtitle{
+    color:#666;
+    margin-bottom:40px;
+}
+
+/* Grid Layout */
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    justify-items:center;
+}
+
+/* Cards */
+.service-card{
+    background:#EDE7F6;
+    padding:25px;
+    width:250px;
+    border-radius:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.15);
+    text-align:center;
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+}
+
+/* Icons */
+.service-icon{
+    width:70px;
+    margin-bottom:10px;
+}
+
+/* Card Text */
+.service-card h3{
+    margin:10px 0;
+    font-size:18px;
+}
+/* .web{
+   width: 100px;
+} */
+
+.service-card p{
+    font-size:14px;
+    color:#555;
+    line-height:1.5;
+}
+
+/* Bottom Section */
+.services-bottom{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+.hire-btn{
+    background:#B39DDB;
+    border:none;
+    padding:10px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:500;
+    box-shadow:0 3px 5px rgba(0,0,0,0.2);
+}
+
+.hire-btn:hover{
+    background:#9575CD;
+    color:white;
+}
+.icon-circle{
+    position:relative;
+    width:90px;
+    height:90px;
+    background-color: #F9FAFB; 
+    border:1px solid black; 
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:15px auto;
+}
+
+/* icon */
+.service-icon{
+    width:50px;
+}
+
+/* wrapper rotates */
+.dot-wrapper{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+/* dot */
+.dot{
+    position:absolute;
+    width:10px;
+    height:10px;
+    background:black;
+    border-radius:50%;
+    top:-5px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+/* rotate only the dot */
+.service-card:hover .dot-wrapper{
+    animation:rotateDot 1.5s linear infinite;
+}
+
+/* animation */
+@keyframes rotateDot{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
