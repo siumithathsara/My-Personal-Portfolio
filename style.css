@@ -448,3 +448,141 @@ html{
         transform:rotate(360deg);
     }
 }
+
+/* Resume */
+
+.resume-section{
+    background:#F9FAFB;
+    padding:60px;
+    border-radius:20px;
+    margin:30px;
+    text-align:center;
+}
+
+/* Title */
+.resume-title{
+    font-size:40px;
+}
+
+.resume-subtitle{
+    color:#777;
+    margin-bottom:30px;
+}
+
+/* Tabs */
+.resume-nav-bar{
+    display:flex;
+    justify-content:center;
+    margin:30px auto;
+}
+
+.resume-nav-list{
+    display:flex;
+    gap:30px;
+    border:2px solid #444;
+    border-radius:30px;
+    padding:5px 10px;
+    list-style:none;
+}
+
+/* nav item */
+.resume-nav-list li{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 25px;
+    border-radius:25px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.resume-nav-list li img{
+    width:18px;
+}
+
+/* hover */
+.resume-nav-list li:hover{
+    background:#BCA8F7;
+}
+
+/* active tab */
+.resume-nav-list .active{
+    background:#BCA8F7;
+}
+/* 
+/* active tab 
+.resume-tabs .active{
+    background:#BCA8F7;
+} */
+
+/* Timeline */
+.resume-education-section{
+    margin-top: 80px;
+    margin-bottom: 100px;
+}
+
+/* Skills Row */
+.resume-skill-section{
+   display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:200px;
+    /* bottom: 0px;
+    left: 0; */
+    /* border-top:1px solid #ccc ;
+    border-bottom:1px solid #ccc; */
+    padding:25px 0 25px 0;
+   box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+.resume-skill-section img{
+    width:60px;
+}
+
+/* Experience Cards */
+.resume-experience-section{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.experience-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    background:#EDE7F6;
+    padding:20px 30px;
+    border-radius:25px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.2);
+}
+
+/* text column */
+.experience-content{
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+.experience-card img{
+    width:80px;
+}
+
+/* optional styling */
+.date{
+    font-size:15px;
+    color:#777;
+}
+
+.head-title{
+    font-weight:600;
+}
+
+.sub-title{
+    font-size:14px;
+    color:#555;
+}
+.experience-card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
