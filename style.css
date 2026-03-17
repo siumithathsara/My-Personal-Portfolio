@@ -92,7 +92,8 @@ html{
     padding: 0px 50px ;
      margin: 70px 30px 30px 30px;
     border-radius: 20px;
-    height: 100vh;
+    min-height: 100vh;
+    flex-wrap: wrap;
    
     
 }
@@ -109,8 +110,7 @@ html{
 .image-home img {
     width: 100%;            
     /* height: auto; */
-    background: #F9FAFB;
-    
+    background: #F9FAFB;  
 }
 .home{
     position: relative;
@@ -142,6 +142,7 @@ html{
     color: #545354;
     margin-bottom: 10px;
      background-color: #F9FAFB;
+
 }
 
 .name {
@@ -182,7 +183,7 @@ html{
     background-color: #F9FAFB;
 }
 
-.cv, .contact-info {
+.cv, .contact-infoh {
     padding: 12px 30px;
     border-radius: 12px;
     border: none;
@@ -197,7 +198,7 @@ html{
      
 }
 
-.cv:hover, .contact-info:hover {
+.cv:hover, .contact-infoh:hover {
     background-color: #DDD6FE;
 }
 
@@ -303,7 +304,8 @@ html{
 }
 
 .about-image img{
-    width:540px;
+    width: 100%;
+    max-width: 400px;
    
 }
 
@@ -530,6 +532,10 @@ html{
 .resume-education-section{
     margin-top: 80px;
     margin-bottom: 100px;
+   
+}
+.resume-education-section img{
+ width: 100%;
 }
 
 /* Skills Row */
@@ -624,8 +630,6 @@ html{
 
 /* work section */
 
-/* WORK SECTION */
-
 .work-section{
     background:#F9FAFB;
     padding:60px;
@@ -648,7 +652,6 @@ html{
     margin-top:10px;
     margin-bottom:30px;
 }
-
 
 /* NAV BAR */
 
@@ -714,8 +717,12 @@ html{
 /* project card */
 .project-card{
     display:flex;
-    gap:100px;
+    gap: 30px;
+    flex-wrap: wrap;
     align-items:flex-start;
+}
+.project-card img{
+    width: 300px;
 }
 
 /* TEXT SECTION */

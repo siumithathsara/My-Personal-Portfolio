@@ -1,0 +1,106 @@
+/* 1440px (Large Laptop) */
+@media (max-width: 1440px) {
+
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    .name {
+        font-size: 64px;
+    }
+
+    .caree {
+        font-size: 40px;
+    }
+    section{
+        margin: 30px 30px 30px 30px;
+    }
+}
+/* 1024px (Laptop) */
+@media (max-width: 1024px) {
+   .container {
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .name {
+        font-size: 64px;
+    } 
+
+    .caree {
+        font-size: 40px;
+    }
+    
+     .nav {
+        padding: 15px 40px;
+    }
+
+    .nav__list {
+        gap: 20px;
+    }
+
+    .home {
+        gap: 30px;
+        padding: 30px;
+    }
+
+    .image-home img {
+        max-width: 950px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .caree {
+        font-size: 36px;
+    }
+
+    .hello {
+        font-size: 26px;
+    }
+
+    .buttons {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .cv, .contact-infoh {
+        width: 200px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .social-media {
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .social-media img {
+        width: 55px;
+        height: 55px;
+         }
+    
+.project-card img{
+    width: 200px;
+    
+}
+.assignment-section{
+    gap: 20px;
+} 
+}
+
+
+
+/* 768px (Tablet) */
+@media (max-width: 768px) { }
+
+/* 425px (Mobile L) */
+@media (max-width: 425px) { }
+
+/* 375px (Mobile M) */
+@media (max-width: 375px) { }
+
+/* 320px (Mobile S) */
+@media (max-width: 320px) { }
