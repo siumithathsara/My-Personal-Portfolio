@@ -32,6 +32,11 @@ html{
     justify-content: space-between;
     margin-left: 15px;
 }
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
 
 
 .logo{
@@ -955,13 +960,13 @@ form button:hover {
     margin: 40px;
     margin-bottom: 0px;
     padding: 40px;
-    border-radius: 50px; /* Gives it the rounded capsule look */
+    border-radius: 50px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .footer h3 {
-     font-family: 'Alex Brush', cursive; /* Elegant cursive font */
+     font-family: 'Alex Brush', cursive; 
     color: #6a5acd;
     font-size: 28px;
     margin-bottom: 20px;

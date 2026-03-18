@@ -94,13 +94,243 @@
 
 
 /* 768px (Tablet) */
-@media (max-width: 768px) { }
+@media (max-width: 768px) {
 
-/* 425px (Mobile L) */
-@media (max-width: 425px) { }
+
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav__list {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: white;
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        display: none;
+    }
+
+    .nav__list.active {
+        display: flex;
+    }
+   
+   .home {
+        margin: 80px 20px 20px 20px;
+        padding: 40px 30px;
+        flex-direction: column-reverse; 
+        text-align: right;
+        min-height: auto;
+    }
+
+    .image-home {
+        justify-content:left;
+        width: 100;
+    }
+
+    .image-home img {
+        max-width: 500px;
+        left: 30px;
+    }
+
+    .name {
+        font-size: 42px;
+        letter-spacing: 1px;
+    }
+
+    .caree {
+        font-size: 28px;
+        margin: 10px auto;
+        border-right: none;
+        border-right: 3px solid #6D28D9; 
+    }
+
+    .buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cv, .contact-infoh {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .social-media {
+
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .social-media img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* 3. About Section */
+    .about-section {
+        padding: 40px 40px;
+        margin: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
+    /* 4. Services Grid (1 column for better readability) */
+    .services-section {
+        padding: 40px 20px;
+        margin: 20px;
+    }
+
+   
+    .services-container {
+        display: flex;
+        flex-wrap: wrap;      
+        justify-content: center; 
+        gap: 30px;
+        max-width: 800px;    
+        margin: 0 auto;
+    }
+
+    /* 3. Card Sizing */
+    .service-card {
+        flex: 0 1 calc(50% - 20px); 
+        min-width: 280px;           
+        max-width: 320px;
+        padding: 30px 20px;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+
+
+    .service-card:nth-child(3) {
+        flex: 0 1 100%; 
+        max-width: 320px; 
+    }
+
+    
+    .services-bottom {
+        flex-direction: row; 
+        gap: 15px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .services-bottom h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+.hire-btn{
+    background:#B39DDB;
+    border:none;
+    padding:10px 35px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:500;
+    box-shadow:0 3px 5px rgba(0,0,0,0.2);
+}
+
+.hire-btn:hover{
+    background:#9575CD;
+    color:white;
+}
+
+/*  resume  */
+
+.resume-skill-section{
+    padding: 20px;
+}
+
+.experience-card{
+    padding: 15px;
+    width: 2200px;
+    height: 100px;
+}
+
+.experience-card img{
+    width: 60px;
+}
+.date{
+    font-size: 13px;
+}
+.head-title{
+
+    font-weight:600;
+    font-size: 15px;
+}
+
+.sub-title{
+    font-size:12px;
+   
+}
+    /* 6. Work / Projects */
+
+    
+    .project-card img{
+    width: 150px;
+    
+}
+/* Gallery */
+    
+.i01 { grid-row: span 2; }
+.i02 { grid-column: span 2; grid-row: span 2; }
+.i03 { grid-row: span 2; }
+.i04 { grid-row: span 3; grid-row: span 2;}
+.i05 { grid-column: span 2; grid-row: span 1; }
+.i05 { grid-row: span 2; }
+.i06{ grid-column: span 2; grid-row: span 2; }
+.i07 { grid-column: span 2; grid-row: span 2; }
+
+
+    /* 7. Contact Form */
+    
+
+    .contect-contact {
+        flex-direction: column;
+       
+    }
+
+    .contact-info{
+  
+    padding: 10px;
+    
+}
+
+    .contact__input, .contact__button {
+        justify-content: center;
+        width: 80%;
+    }
+    .footer{
+        padding: 20px;
+        margin: 20px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 425px) {
+ 
+    
+}
 
 /* 375px (Mobile M) */
-@media (max-width: 375px) { }
+@media (max-width: 375px) {
+
+ }
 
 /* 320px (Mobile S) */
 @media (max-width: 320px) { }
