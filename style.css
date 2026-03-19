@@ -7,8 +7,11 @@
      font-family: Arial, sans-serif;
 }
 
+html,
 body {
     background-color: #F3E8FF;
+    overflow-x: hidden;
+    width: 100% ;
 }
 
 html{
