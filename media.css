@@ -643,7 +643,10 @@
         height: 220%;
     }
 
-    .i04, .i05, .i06, .i07 {
+    .i04,
+    .i05,
+    .i06,
+    .i07 {
         margin-top: 45%;
         grid-row: span 2;
     }
@@ -653,7 +656,8 @@
         height: 220%;
     }
 
-    .i05, .i06 {
+    .i05,
+    .i06 {
         width: 100%;
         height: 100%;
     }
@@ -666,8 +670,9 @@
 
 /* 320px (Mobile S) */
 @media (max-width: 321px) {
+
     /* Home */
-     .name {
+    .name {
         font-size: 20px;
     }
 
@@ -690,11 +695,85 @@
 
     /* service */
 
-.service-card {
-       
+    .service-card {
         min-width: 230px;
         max-width: 320px;
         padding: 30px 20px;
-       
+
     }
+
+    .resume-education-section {
+        padding: 5%;
+    }
+
+    .resume-section {
+        padding: 0;
+        margin: 30px;
+    }
+
+    .resume-education-section img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .resume-skill-section {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5%;
+    }
+
+    .resume-experience-section {
+        padding: 18%;
+        padding-top: 0;
+    }
+
+    .date {
+        font-size: 70%;
+    }
+
+    .head-title {
+        font-size: 80%;
+    }
+
+    .sub-title {
+        font-size: 70%;
+    }
+
+    .tags {
+        gap: 1%;
+    }
+
+    .i04,
+    .i05,
+    .i06,
+    .i07 {
+        margin-top: 56%;
+        grid-row: span 2;
+    }
+
+     .gallery-section {
+        padding-bottom: 35%;
+    }
+    .location{
+    
+       font-size: 15px;
+}
+
+.number{
+  
+       font-size: 15px;
+}
+.email{
+   
+       font-size: 15px; 
+}
+ #contact-form {
+        padding-left: 7%;
+    }
+    .footer {
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 0;
+    }
+
 }
