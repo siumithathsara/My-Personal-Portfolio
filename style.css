@@ -19,6 +19,50 @@ html{
 }
 
 /* nav bar */
+/* =========================================== */
+#burger {
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-panel {
+    background-color: rgba(17, 17, 17, 0.4);
+    backdrop-filter: blur(10px);
+    color: white;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    transition: right 0.5s ease-in-out;
+}
+
+.menu-panel .menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    list-style: none;
+    
+}
+
+.button-close {
+    background: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    border: none;
+}
+
+.hide {
+    display: none;
+}
+
+/* =========================================== */
  .header{
     position: fixed;
     top: 0;
@@ -35,12 +79,6 @@ html{
     justify-content: space-between;
     margin-left: 15px;
 }
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
 
 .logo{
     display: flex;
@@ -87,6 +125,9 @@ html{
   text-decoration-color: transparent;
   margin-left: 25px;
 } 
+.hide {
+    display: none !important;
+}
 
 /* home page */
 
