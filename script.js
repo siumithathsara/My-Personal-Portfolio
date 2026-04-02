@@ -9,5 +9,5 @@ burger.addEventListener("click", () => {
 
 buttonClose.addEventListener("click", () => {
     menuPanel.classList.remove("active");
-    burger.classList.remove("hide"); 
+    burger.classList.remove("hide");
 });
