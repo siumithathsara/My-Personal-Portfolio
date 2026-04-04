@@ -517,7 +517,9 @@
      margin: 30px;
      text-align: center;
  }
-
+/* .resume-content {
+  display: none;
+} */
  /* Title */
  .resume-title {
      font-size: 40px;
@@ -703,11 +705,12 @@
      font-weight: 700;
  }
 
- .subtitle {
+ .work-section .subtitle {
      text-align: center;
      color: #666;
      margin-top: 10px;
      margin-bottom: 30px;
+    padding-left: 0%;
  }
 
  /* NAV BAR */
@@ -848,6 +851,7 @@
  .assignments-card img:hover {
      transform: scale(1.1);
  }
+ 
 
  .assignments-card p {
      margin-top: 8px;
@@ -860,6 +864,13 @@
      border-radius: 20px;
      margin: 30px;
      text-align: center;
+ }
+  .gallery-section .subtitle {
+     text-align: center;
+     color: #666;
+     margin-top: 10px;
+     margin-bottom: 30px;
+    padding-left: 0%;
  }
 
  .gallery-grid {

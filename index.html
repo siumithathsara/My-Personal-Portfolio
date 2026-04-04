@@ -283,27 +283,28 @@
       <nav class="resume-nav-bar">
         <div class="resume-nav">
           <ul class="resume-nav-list">
-            <li>
-              <!-- resume nav bar -->
-              <img src="assets/all.png" width="20px" alt="">
-              <a href="#all" class="all-resume">All</a>
-            </li>
 
-            <li>
-              <img src="assets/edu_icon.png" width="20px" alt="">
-              <a href="#education" class="education-resume">Education</a>
-            </li>
+  <li onclick="showResume('all', this)">
+    <img src="assets/all.png" width="20px">
+    <a href="#">All</a>
+  </li>
 
-            <li>
-              <img src="assets/skill.png" width="20px" alt="">
-              <a href="#skill" class="skill-resume">Skills</a>
-            </li>
+  <li onclick="showResume('education', this)">
+    <img src="assets/edu_icon.png" width="20px">
+    <a href="#">Education</a>
+  </li>
 
-            <li>
-              <img src="assets/experience.png" width="20px" alt="">
-              <a href="#experience" class="experience-resume">Experience</a>
-            </li>
-          </ul>
+  <li onclick="showResume('skill', this)">
+    <img src="assets/skill.png" width="20px">
+    <a href="#">Skills</a>
+  </li>
+
+  <li onclick="showResume('experience', this)">
+    <img src="assets/experience.png" width="20px">
+    <a href="#">Experience</a>
+  </li>
+
+</ul>
         </div>
       </nav>
 
@@ -311,14 +312,14 @@
 
         <!-- education-->
 
-        <div class="resume-education-section" id="education">
+        <div class="resume-education-section resume-content" id="education">
 
           <img src="assets/education.png" alt="">
         </div>
 
         <!-- Skills -->
 
-        <div class="resume-skill-section" id="skill">
+        <div class="resume-skill-section resume-content" id="skill">
           <div class="skill-track">
             <img src="assets/java.png" alt="Java">
             <img src="assets/html.png" alt="HTML">
@@ -338,7 +339,7 @@
 
 
         <!-- experience-->
-        <div class="resume-experience-section" id="experience">
+        <div class="resume-experience-section resume-content" id="experience">
           <div class="experience-card">
 
             <img src="assets/scl.png" alt="">
@@ -464,7 +465,7 @@
           </div>
 
           <div class="assignments-card">
-            <a href="">
+            <a href="https://github.com/siumithathsara/Internet-Technology-Assignment-04.git">
               <img src="assets/assignment-box.png" width="100px" alt="">
               <p>Assignment_04</p>
             </a>
@@ -492,7 +493,7 @@
           </div>
 
           <div class="assignments-card">
-            <a href="">
+            <a href="https://github.com/siumithathsara/Internet-Technology-Assignment-08.git">
               <img src="assets/assignment-box.png" width="100px" alt="">
               <p>Assignment_08</p>
             </a>
