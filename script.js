@@ -57,15 +57,15 @@ function showWork(sectionId, element) {
 }
 // name tag
 const texts = [
-    "SOFTWARE ENGINEER",
-    "WEB DEVELOPER",
-    "UI DESIGNER"
+    "SOFTWARE ENGINEER ",
+    "WEB DEVELOPER ",
+    "UI DESIGNER  "
 ];
 
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const speed = 100;
+const speed = 70;
 
 function typeEffect() {
     const element = document.getElementById("typing-text");
