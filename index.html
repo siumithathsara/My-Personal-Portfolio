@@ -265,7 +265,7 @@
 
       <div class="services-bottom">
         <p>Interested in working together:</p>
-        <button class="hire-btn">Hire me</button>
+       <a href="#contact"><button class="hire-btn">Hire me</button></a> 
       </div>
 
     </section>
@@ -378,29 +378,30 @@
 
       <nav class="work-nav-bar">
         <div class="work-nav">
-          <ul class="work-nav-list">
-            <li>
-              <!-- work nav bar -->
-              <img src="assets/all.png" width="20px" alt="">
-              <a href="#all-work" class="all-work">All</a>
-            </li>
+           <ul class="work-nav-list">
 
-            <li>
-              <img src="assets/project.png" width="20px" alt="">
-              <a href="#projects" class="project-work">Projects</a>
-            </li>
+  <li onclick="showWork('all', this)">
+    <img src="assets/all.png" width="20px">
+    <a href="#">All</a>
+  </li>
 
-            <li>
-              <img src="assets/assignment.png" width="20px" alt="">
-              <a href="#assignments" class="assignment-work">Assignments</a>
-            </li>
-          </ul>
+  <li onclick="showWork('project', this)">
+    <img src="assets/project.png" width="20px">
+    <a href="#">Projects</a>
+  </li>
+
+  <li onclick="showWork('assignment', this)">
+    <img src="assets/assignment.png" width="20px">
+    <a href="#">Assignments</a>
+  </li>
+
+</ul>
         </div>
       </nav>
 
       <!-- projects -->
       <div class="work-all" id="all-work">
-        <div class="project-section" id="projects">
+         <div class="work-project-section work-content" id="project">
           <div class="project-card">
             <a href="https://github.com/siumithathsara/Connect-4-game.git">
               <img src="assets/game.png" alt="">
@@ -441,7 +442,7 @@
 
         </div>
 
-        <div class="assignment-section" id="assignments">
+         <div class="work-assignment-section work-content" id="assignment">
 
           <div class="assignments-card">
             <a href="assets/Assignment  01.pdf">

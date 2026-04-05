@@ -767,7 +767,7 @@
 
  /* Project Section */
 
- .project-section {
+ .work-project-section {
      display: flex;
      flex-direction: column;
      gap: 30px;
@@ -832,7 +832,7 @@
 
  /* Assignments */
 
- .assignment-section {
+ .work-assignment-section {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
      gap: 100px;

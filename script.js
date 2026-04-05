@@ -37,3 +37,21 @@ function showResume(sectionId, element) {
 
 //  work section
 
+function showWork(sectionId, element) {
+  const sections = document.querySelectorAll(".work-content");
+  const navItems = document.querySelectorAll(".work-nav-list li");
+
+  navItems.forEach(item => item.classList.remove("active"));
+  element.classList.add("active");
+
+  sections.forEach(sec => sec.style.display = "none");
+
+  if (sectionId === "all") {
+    sections.forEach(sec => {
+      sec.style.display = ""; 
+    });
+  } else {
+    const activeSection = document.getElementById(sectionId);
+    activeSection.style.display = ""; 
+  }
+}
