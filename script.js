@@ -55,3 +55,42 @@ function showWork(sectionId, element) {
     activeSection.style.display = ""; 
   }
 }
+// name tag
+const texts = [
+    "SOFTWARE ENGINEER",
+    "WEB DEVELOPER",
+    "UI DESIGNER"
+];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const speed = 100;
+
+function typeEffect() {
+    const element = document.getElementById("typing-text");
+    const currentText = texts[textIndex];
+
+    if (isDeleting) {
+        element.textContent = currentText.substring(0, charIndex--);
+    } else {
+        element.textContent = currentText.substring(0, charIndex++);
+    }
+
+    // When typing finished
+    if (!isDeleting && charIndex === currentText.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000); // pause
+        return;
+    }
+
+    // When deleting finished
+    if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        textIndex = (textIndex + 1) % texts.length; // next word
+    }
+
+    setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+}
+
+typeEffect();
