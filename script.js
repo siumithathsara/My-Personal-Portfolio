@@ -94,3 +94,45 @@ function typeEffect() {
 }
 
 typeEffect();
+// email
+const form = document.getElementById("contact-form");
+const messageBox = document.getElementById("form-message");
+
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById("contact-name").value.trim();
+    const email = document.getElementById("contact-email").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+    // Email pattern
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    // Validation
+    if (name.length < 3) {
+        showMessage("Name must be at least 3 characters", "red");
+        return;
+    }
+
+    if (!email.match(emailPattern)) {
+        showMessage("Enter a valid email address", "red");
+        return;
+    }
+
+    if (message.length < 10) {
+        showMessage("Message must be at least 10 characters", "red");
+        return;
+    }
+
+    // Success
+    showMessage("Message sent successfully!", "green");
+
+    form.reset();
+});
+
+// Function to show message
+function showMessage(msg, color) {
+    messageBox.style.display = "block";
+    messageBox.style.color = color;
+    messageBox.textContent = msg;
+}

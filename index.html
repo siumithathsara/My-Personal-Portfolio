@@ -606,21 +606,30 @@
             Or just write me a mail here_
           </p>
 
-          <form action="" id="contact-form">
-            <div class="contact__input-div" name="name">
-              <input type="text" class="contact__input" id="contact-name" placeholder="Your name...">
-            </div>
-            <div class="contact__input-div" name="email">
-              <input type="email" class="contact__input" id="contact-email" placeholder="Your e-mail...">
-            </div>
-            <div class="contact__input-div" name="message">
-              <textarea name="" placeholder="Type the message here...." id="message" class="contact__input textarea"
-                cols="30" rows="10"></textarea>
-            </div>
-            <button type="submit" class="button contact__button ">
-              SEND
-            </button>
-          </form>
+          <form id="contact-form" class="contact__form">
+  <div class="contact__input-div">
+    <input type="text" class="contact__input" id="contact-name" name="name"
+      placeholder="Your name..." required minlength="3">
+  </div>
+
+  <div class="contact__input-div">
+    <input type="email" class="contact__input" id="contact-email" name="email"
+      placeholder="Your e-mail..." required>
+  </div>
+
+  <div class="contact__input-div">
+    <textarea name="message" id="message"
+      placeholder="Type the message here..." class="contact__input textarea"
+      cols="30" rows="10" required minlength="10"></textarea>
+  </div>
+
+  <button type="submit" class="button contact__button">
+    SEND
+  </button>
+
+  <!-- Success message -->
+  <p id="form-message" style="display:none; margin-top:10px;"></p>
+</form>
         </div>
 
       </div>
