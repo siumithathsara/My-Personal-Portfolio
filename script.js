@@ -77,23 +77,24 @@ function typeEffect() {
         element.textContent = currentText.substring(0, charIndex++);
     }
 
-    // When typing finished
+    
     if (!isDeleting && charIndex === currentText.length) {
         isDeleting = true;
-        setTimeout(typeEffect, 1000); // pause
+        setTimeout(typeEffect, 1000); 
         return;
     }
 
-    // When deleting finished
+    
     if (isDeleting && charIndex === 0) {
         isDeleting = false;
-        textIndex = (textIndex + 1) % texts.length; // next word
+        textIndex = (textIndex + 1) % texts.length; 
     }
 
     setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
 }
 
 typeEffect();
+
 // email
 const form = document.getElementById("contact-form");
 const messageBox = document.getElementById("form-message");
@@ -105,10 +106,9 @@ form.addEventListener("submit", function(e) {
     const email = document.getElementById("contact-email").value.trim();
     const message = document.getElementById("message").value.trim();
 
-    // Email pattern
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-    // Validation
+    
     if (name.length < 3) {
         showMessage("Name must be at least 3 characters", "red");
         return;
@@ -124,13 +124,12 @@ form.addEventListener("submit", function(e) {
         return;
     }
 
-    // Success
+   
     showMessage("Message sent successfully!", "green");
-
     form.reset();
 });
 
-// Function to show message
+
 function showMessage(msg, color) {
     messageBox.style.display = "block";
     messageBox.style.color = color;

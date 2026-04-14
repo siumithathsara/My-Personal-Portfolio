@@ -223,9 +223,15 @@
 }
 
 @keyframes blink {
-    0% { border-color: transparent; }
-    50% { border-color: #6D28D9; }
-    100% { border-color: transparent; }
+    0% { 
+        border-color: transparent;
+     }
+    50% {
+         border-color: #6D28D9; 
+        }
+    100% {
+         border-color: transparent; 
+        }
 }
 
  .right-side {
