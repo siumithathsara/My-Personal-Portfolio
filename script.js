@@ -96,6 +96,11 @@ function typeEffect() {
 typeEffect();
 
 // email
+
+(function(){
+    emailjs.init("UIzJqX_kHjtUt0k_w");
+})();
+
 const form = document.getElementById("contact-form");
 const messageBox = document.getElementById("form-message");
 
@@ -108,7 +113,7 @@ form.addEventListener("submit", function(e) {
 
     const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
-    
+   
     if (name.length < 3) {
         showMessage("Name must be at least 3 characters", "red");
         return;
@@ -124,11 +129,21 @@ form.addEventListener("submit", function(e) {
         return;
     }
 
-   
-    showMessage("Message sent successfully!", "green");
-    form.reset();
+    // Send email
+    emailjs.send("service_9tl28zo", "template_kkv7wfi", {
+        name: name,
+        email: email,
+        message: message
+    })
+    .then(function(response) {
+        showMessage("Message sent successfully!", "green");
+        form.reset();
+    })
+    .catch(function(error) {
+        console.error("EmailJS Error:", error);
+        showMessage("Failed to send message!", "red");
+    });
 });
-
 
 function showMessage(msg, color) {
     messageBox.style.display = "block";
